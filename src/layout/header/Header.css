@@ -1,0 +1,8 @@
+.header {
+    background-color: rgb(124, 137, 152); /* to delete */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0 0  auto;
+    padding: 1rem;
+}

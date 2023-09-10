@@ -1,0 +1,20 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.layout main {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    min-height: 90%;
+    max-height: 100%;
+}
+
+.layout .page-content {
+    padding: 1.5rem;   
+}
