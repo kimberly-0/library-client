@@ -22,7 +22,7 @@ const Members = ({ members, deleteLocalMember }) => {
 
     return (
         <>
-            <Link to={'/members/add'}>Add new member</Link>
+            <Link to={'/members/add'} className="add-new-button">Add new member</Link>
 
             {members?.length > 0 ? (
                 <table>
@@ -37,8 +37,8 @@ const Members = ({ members, deleteLocalMember }) => {
                             <tr key={member.id}>
                                 <td>{member.firstName ? `${member.firstName}` : ""} {member.surname ? `${member.surname}` : ""}</td>
                                 <td>{member.numOfBooks ? member.numOfBooks : "0"}</td>
-                                <td><Link to={`/members/${member.id}/edit`} >Edit</Link></td>
-                                <td><button onClick={() => handleDelete(member)} >Delete</button></td>
+                                <td><Link to={`/members/${member.id}/edit`} className="action-button">Edit</Link></td>
+                                <td><button onClick={() => handleDelete(member)} className="action-button delete-button">Delete</button></td>
                             </tr>
                         )}
                     </tbody>
