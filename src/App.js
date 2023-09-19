@@ -74,7 +74,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
 
-          <Route path="/" element={<Home />} ></Route>
+          <Route path="/" element={<Home books={books} members={members} />} ></Route>
 
           <Route path="/books" element={<Books books={books} deleteLocalBook={deleteLocalBook} />} ></Route>
           <Route path="/books/:bookId/issue" element={<IssueBook updateLocalBooks={updateLocalBooks} updateLocalMembers={updateLocalMembers} />}></Route>
