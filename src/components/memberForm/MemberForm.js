@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 const MemberForm = ({ handleSubmit, initialData = {
     firstName: '',
     surname: '',
-    profileImage: '',
 }}) => {
 
     const [member, setMember] = useState(initialData);
