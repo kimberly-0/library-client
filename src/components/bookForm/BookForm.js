@@ -4,7 +4,7 @@ const BookForm = ({ handleSubmit, initialData = {
     title: '',
     authorFirstName: '',
     authorSurname: '',
-    coverImage: '',
+    coverImageURL: '',
 }}) => {
 
     const [book, setBook] = useState(initialData);
@@ -28,7 +28,7 @@ const BookForm = ({ handleSubmit, initialData = {
             <div className="form-field">
                 <label htmlFor="title">Title</label>
                 <input
-                    type='title'
+                    type='text'
                     id='title'
                     name='title'
                     value={book.title}
@@ -40,7 +40,7 @@ const BookForm = ({ handleSubmit, initialData = {
             <div className="form-field">
                 <label htmlFor="authorFirstName">Author's first name</label>
                 <input
-                    type='authorFirstName'
+                    type='text'
                     id='authorFirstName'
                     name='authorFirstName'
                     value={book.authorFirstName}
@@ -52,12 +52,24 @@ const BookForm = ({ handleSubmit, initialData = {
             <div className="form-field">
                 <label htmlFor="authorSurname">Author's surname</label>
                 <input
-                    type='authorSurname'
+                    type='text'
                     id='authorSurname'
                     name='authorSurname'
                     value={book.authorSurname}
                     onChange={e => {handleChange({authorSurname: e.target.value})}}
                     placeholder='authorSurname'
+                />
+            </div>
+
+            <div className="form-field">
+                <label htmlFor="coverImageURL">Cover image URL</label>
+                <input
+                    type='url'
+                    id='coverImageURL'
+                    name='coverImageURL'
+                    value={book.coverImageURL}
+                    onChange={e => {handleChange({coverImageURL: e.target.value})}}
+                    placeholder='coverImageURL'
                 />
             </div>
 
