@@ -1,0 +1,8 @@
+.bookCoverImg {
+    /* height: 8rem;
+    width: 5.9rem; */
+    height: 4.5rem;
+    width: 3rem;
+    object-fit: cover;
+    border: .5px solid black;
+}
